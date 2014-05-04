@@ -34,26 +34,11 @@ namespace HandSignRecognition.Feature
 
             IList testSampleList = FeatureHelper.GetTestFeaturesList();        //获取原始测试            
             KnNear kn = new KnNear();
-
-
-
-
-
-
-
-
-
-
-            //IDictionary泛型与IDictionary接口区别
-
             //每个元素都存储在 KeyValuePair<TKey, TValue> 对象中
             IDictionary<int, double> map = new Dictionary<int, double>();
             //每个元素都存储在DictionaryEntry 
             IDictionary dictionary = new Hashtable();
             //DictionaryEntry进行循环遍历
-
-
-
 
             ArrayList klist = new ArrayList();
             ArrayList ratelist = new ArrayList();

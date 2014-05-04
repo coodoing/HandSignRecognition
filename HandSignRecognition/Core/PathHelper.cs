@@ -7,5 +7,6 @@ namespace HandSignRecognition.Core
 {
     public class PathHelper
     {
+
     }
 }

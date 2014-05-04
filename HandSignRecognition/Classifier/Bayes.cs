@@ -8,13 +8,24 @@ using HandSignRecognition.Core.Base;
 
 namespace HandSignRecognition.Classifier
 {
+    /// <summary> 
+    /// Author:AirFly
+    /// Date:12/4/2010 10:38:00 PM 
+    /// Company:DCBI
+    /// Copyright:2010-2013 
+    /// CLR Version:4.0.30319.1 
+    /// Blog Address:http://www.cnblogs.com/ttltry-air/
+    /// Class1 Illustration: All rights reserved please do not encroach!   
+    /// GUID:963d892f-4cc4-4c96-93e1-ef1a1133160b 
+    /// Description: Bayes类
+    /// </summary>
     public class Bayes
     {
         private IList classID_List = null;           //各类类标注
         private IList mean_Vector_List = null;        //各类均值向量
         private IList con_Matrix_Invert_List = null; //各类协方差矩阵的逆矩阵
         private IList con_Matrix_Det_List = null;    //各类协方差矩阵的行列式  
-        private IList trainSampleList = null;       //贝叶斯分类器训练样本集合
+        private IList trainSampleList = null;       //贝叶斯分类器训练样本实例
         private static Bayes instance = null;
 
         public static Bayes GetInstance() //设计模式中的单例模式
@@ -56,20 +67,6 @@ namespace HandSignRecognition.Classifier
                 }
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         /*

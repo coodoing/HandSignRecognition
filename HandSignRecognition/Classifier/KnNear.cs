@@ -8,8 +8,16 @@ using HandSignRecognition.Core;
 
 namespace HandSignRecognition.Classifier
 {
-    /// <summary>
-    /// Kn近邻分类器
+    /// <summary> 
+    /// Author:AirFly
+    /// Date:12/5/2010 10:38:00 PM 
+    /// Company:DCBI
+    /// Copyright:2010-2013 
+    /// CLR Version:4.0.30319.1 
+    /// Blog Address:http://www.cnblogs.com/ttltry-air/
+    /// Class1 Illustration: All rights reserved please do not encroach!   
+    /// GUID:963d892f-4cc4-4c96-93e1-ef1a1133160b 
+    /// Description: Kn近邻分类器
     /// </summary>
     public class KnNear
     {
@@ -32,42 +40,21 @@ namespace HandSignRecognition.Classifier
 
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         //进行K近邻分量
-
-        //输入参数testsamples为要进行测试的样本集,trainingSamples为训练样本集【非降维处理过的】
+        //输入参数testsamples为要进行测试的样本集,trainingSamples为训练样本集
         //k_value是设置的K参数
         public int DoK_nearest(Features myTestSample, ArrayList trainingSamples, int k_value)
         {
             int i, j, m = 0, trainingCount = trainingSamples.Count;
-            //m为k近邻中类的个数
             int old_classid = -1, new_classid = -1;
             int max = 0, result = 0;
-            //max指k近邻中样本数最多的类的样本个数
             Features myTrainingSample;
 
             if (trainingCount == 0 || myTestSample == null)
                 return -1;
 
             //建立用来记录当前测试样本到每个训练样本的距离以及对应的训练样本类别
-            sampleDistance[] myDistance = new sampleDistance[trainingCount];//开测试为320，闭测试为400
+            sampleDistance[] myDistance = new sampleDistance[trainingCount];
 
             //依次计算当前tmpsample样本与训练样本集中所有样本的欧式距离
             for (i = 0; i < trainingCount; i++)
@@ -88,8 +75,6 @@ namespace HandSignRecognition.Classifier
                 {
                     break; 
                 }
-
-
                 new_classid = myDistance[i].classID;
                 if (old_classid != new_classid)
                 {

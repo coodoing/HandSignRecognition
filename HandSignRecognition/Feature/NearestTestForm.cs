@@ -28,6 +28,7 @@ namespace HandSignRecognition.Feature
         public NearestTestForm()
         {
             InitializeComponent();
+            this.btn_clear.Visible = false;
         }
 
         private void NearestTestForm_Load(object sender, EventArgs e)
@@ -91,6 +92,8 @@ namespace HandSignRecognition.Feature
 
             #region 基于事件Event异步加载
 
+
+
             #endregion
 
             #region Background控件异步实现
@@ -99,9 +102,9 @@ namespace HandSignRecognition.Feature
 
             #endregion
 
-        }              
+        }
 
-        #region none:Background事件
+        #region Background事件
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
@@ -131,9 +134,42 @@ namespace HandSignRecognition.Feature
 
         }
 
-        
+        #endregion
 
-        #endregion                
+        #region Event事件
+        #endregion
+
+        #endregion
+
+        #region 公共方法
+
+        #region delegate异步加载处理
+
+        private void AsynLoadView()
+        {
+
+        }
+
+        private void SetControlPropertyValue(Control oControl, string propName, object propValue)
+        {
+            if (oControl.InvokeRequired)
+            {
+                SetControlValueCallback d = new SetControlValueCallback(SetControlPropertyValue);
+                oControl.Invoke(d, new object[] { oControl, propName, propValue });
+            }
+            else
+            {
+                Type t = oControl.GetType();
+                PropertyInfo[] props = t.GetProperties();
+                foreach (PropertyInfo p in props)
+                {
+                    if (p.Name.ToUpper() == propName.ToUpper())
+                    {
+                        p.SetValue(oControl, propValue, null);
+                    }
+                }
+            }
+        }
 
         #endregion
 
@@ -210,43 +246,6 @@ namespace HandSignRecognition.Feature
 
             return ds;
         }
-
-
-        #region none:公共方法
-
-        #region none：Event事件       
-
-        #endregion
-
-        #region none：delegate异步加载处理
-
-        private void AsynLoadView()
-        {
-
-        }
-
-        private void SetControlPropertyValue(Control oControl, string propName, object propValue)
-        {
-            if (oControl.InvokeRequired)
-            {
-                SetControlValueCallback d = new SetControlValueCallback(SetControlPropertyValue);
-                oControl.Invoke(d, new object[] { oControl, propName, propValue });
-            }
-            else
-            {
-                Type t = oControl.GetType();
-                PropertyInfo[] props = t.GetProperties();
-                foreach (PropertyInfo p in props)
-                {
-                    if (p.Name.ToUpper() == propName.ToUpper())
-                    {
-                        p.SetValue(oControl, propValue, null);
-                    }
-                }
-            }
-        }
-
-        #endregion
 
         #endregion
 

@@ -21,6 +21,7 @@ namespace HandSignRecognition.Feature
         public BayesTestForm()
         {
             InitializeComponent();
+            this.cleanButton.Visible = false;
         }
 
         #endregion
@@ -33,21 +34,13 @@ namespace HandSignRecognition.Feature
 
             double correctCount = 0.0;
             double correctRate = 0.0;
-                 IList sampleList = FeatureHelper.GetFeaturesList();            //获取原始训练样本            
-            
-
-
-
-
-            
+            IList sampleList = FeatureHelper.GetFeaturesList();            //获取原始训练样本            
             //从降维器获取降维后的新样本
             IList newSampleList = MDAHelper.GetMDSampleList();
             MVHelper.SetSampleList((ArrayList)newSampleList);
-            //
-
 
             Bayes bayes = Bayes.GetInstance();
-            bayes.TrainSampleList = newSampleList;                 //向贝叶斯分类器注入降维后的训练样本，主要是Bayes中变量的初始化
+            bayes.TrainSampleList = newSampleList;                 //向贝叶斯分类器注入降维后的训练样本
 
             IList testSampleList = FeatureHelper.GetTestFeaturesList();        //获取测试样本
 

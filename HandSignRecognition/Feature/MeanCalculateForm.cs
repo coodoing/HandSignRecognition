@@ -16,8 +16,8 @@ namespace HandSignRecognition.Feature
     {
         #region Data数据
 
-        private ArrayList classFeatureList; //降维前所有的样本类
-        private ArrayList rdFeatureList; //降维处理后的样本类
+        private ArrayList classFeatureList;
+        private ArrayList rdFeatureList;
 
         #endregion
 
@@ -33,7 +33,7 @@ namespace HandSignRecognition.Feature
         // μ、∑计算
         private void mvButton_Click(object sender, EventArgs e)
         {
-            ArrayList samples = FeatureHelper.GetFeaturesList();//获取训练样本特征List
+            ArrayList samples = FeatureHelper.GetFeaturesList();
             MVHelper.SetSampleList(samples);
             ResetResultView();
         }
@@ -45,12 +45,8 @@ namespace HandSignRecognition.Feature
             ArrayList mdSamples = MDAHelper.GetMDSampleList();
             MVHelper.SetSampleList(mdSamples);
 
-
-
-
-
             //再用这个新样本，算出每一类的均值和协方差矩阵
-               //ArrayList changeSamples = MVHelper.GetClassFeatureList(mdSamples);
+            ArrayList changeSamples = MVHelper.GetClassFeatureList(mdSamples);
             ResetRDResultView(mdSamples);
         }
 
@@ -90,36 +86,6 @@ namespace HandSignRecognition.Feature
             //计算初始选择的结果 
             ShowResultView(Int32.Parse((string)this.classChooseComboBox.Items[0]));
         }
-
-        //显示结果视图,即显示类的均值向量和协方差矩阵
-        private void ShowResultView(int classID)
-        {
-            resultTextBox.Text = "";
-            Sample sample;
-            if (classFeatureList.Count == 1)
-            {
-                sample = (Sample)classFeatureList[0];
-            }
-            else
-            {
-                sample = (Sample)classFeatureList[classID - 1];
-            }
-
-            int dimension = sample.MeanVector.Rows;
-            string classIDStr = "000" + sample.ClassID;
-            string classViewString = "";
-            classViewString += "类别ID：" + classIDStr.Substring(classIDStr.Length - 3) + "\r\n\r\n";
-            classViewString += "均值向量： [ " + dimension + " 维向量 ]\r\n" + sample.MeanVector.Transpose().ToString("\t", true, true) + "\r\n\r\n";
-            classViewString += "协方差矩阵： [ " + dimension + " * " + dimension + " 维矩阵 ]\r\n" + sample.ConMatrix.ToString("\t", true, true);
-            resultTextBox.Text = classViewString;
-        }
-
-
-
-
-
-
-
 
         // 降维后重置结果视图
         private void ResetRDResultView(ArrayList arr)
@@ -164,7 +130,28 @@ namespace HandSignRecognition.Feature
             resultTextBox.Text = classViewString;
         }
 
-       
+        //显示结果视图,即显示类的均值向量和协方差矩阵
+        private void ShowResultView(int classID)
+        {
+            resultTextBox.Text = "";
+            Sample sample;
+            if (classFeatureList.Count == 1)
+            {
+                sample = (Sample)classFeatureList[0];
+            }
+            else
+            {
+                sample = (Sample)classFeatureList[classID - 1];
+            }
+
+            int dimension = sample.MeanVector.Rows;
+            string classIDStr = "000" + sample.ClassID;
+            string classViewString = "";
+            classViewString += "类别ID：" + classIDStr.Substring(classIDStr.Length - 3) + "\r\n\r\n";
+            classViewString += "均值向量： [ " + dimension + " 维向量 ]\r\n" + sample.MeanVector.Transpose().ToString("\t", true, true) + "\r\n\r\n";
+            classViewString += "协方差矩阵： [ " + dimension + " * " + dimension + " 维矩阵 ]\r\n" + sample.ConMatrix.ToString("\t", true, true);
+            resultTextBox.Text = classViewString;
+        }
 
         #endregion
 

@@ -101,9 +101,6 @@ namespace HandSignRecognition.Feature
                     IList newSampleList = MDAHelper.GetMDSampleList();
                     MVHelper.SetSampleList((ArrayList)newSampleList);
 
-
-
-
                     Bayes bayes = Bayes.GetInstance();
                     bayes.TrainSampleList = newSampleList;                 //向贝叶斯分类器注入降维后的训练样本
 

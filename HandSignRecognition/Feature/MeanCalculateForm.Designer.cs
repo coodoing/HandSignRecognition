@@ -111,13 +111,14 @@
             this.resultTextBox.Location = new System.Drawing.Point(0, 46);
             this.resultTextBox.Multiline = true;
             this.resultTextBox.Name = "resultTextBox";
+            this.resultTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.resultTextBox.Size = new System.Drawing.Size(555, 271);
             this.resultTextBox.TabIndex = 2;
             // 
             // classChooseComboBox
             // 
             this.classChooseComboBox.FormattingEnabled = true;
-            this.classChooseComboBox.Location = new System.Drawing.Point(337, 20);
+            this.classChooseComboBox.Location = new System.Drawing.Point(233, 20);
             this.classChooseComboBox.Name = "classChooseComboBox";
             this.classChooseComboBox.Size = new System.Drawing.Size(154, 20);
             this.classChooseComboBox.TabIndex = 1;
@@ -126,7 +127,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(222, 23);
+            this.label3.Location = new System.Drawing.Point(93, 23);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 12);
             this.label3.TabIndex = 0;

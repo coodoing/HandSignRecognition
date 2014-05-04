@@ -101,7 +101,7 @@
             // 
             // cleanButton
             // 
-            this.cleanButton.Location = new System.Drawing.Point(370, 11);
+            this.cleanButton.Location = new System.Drawing.Point(471, 11);
             this.cleanButton.Name = "cleanButton";
             this.cleanButton.Size = new System.Drawing.Size(92, 40);
             this.cleanButton.TabIndex = 1;
@@ -111,7 +111,7 @@
             // 
             // testButton
             // 
-            this.testButton.Location = new System.Drawing.Point(171, 11);
+            this.testButton.Location = new System.Drawing.Point(279, 11);
             this.testButton.Name = "testButton";
             this.testButton.Size = new System.Drawing.Size(107, 40);
             this.testButton.TabIndex = 0;

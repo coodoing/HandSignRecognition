@@ -7,7 +7,17 @@ using HandSignRecognition.Core.Base;
 
 namespace HandSignRecognition.Core
 {
-    // 降维处理函数
+    /// <summary> 
+    /// Author:AirFly
+    /// Date:12/5/2010 10:38:00 PM 
+    /// Company:DCBI
+    /// Copyright:2010-2013 
+    /// CLR Version:4.0.30319.1 
+    /// Blog Address:http://www.cnblogs.com/ttltry-air/
+    /// Class1 Illustration: All rights reserved please do not encroach!   
+    /// GUID:963d892f-4cc4-4c96-93e1-ef1a1133160b 
+    /// Description：降维处理函数
+    /// </summary>
     public class MDAHelper
     {
 
@@ -38,17 +48,12 @@ namespace HandSignRecognition.Core
 
                 #endregion
 
-
-
-
-
-                // LDA方法降维
                 #region 计算 总类内散布矩阵 和 总均值向量
 
                 for (int i = 0; i < sampleClassList.Count; i++)
                 {
                     Sample sample = (Sample)sampleClassList[i];
-                    int n_SampleNum = sample.ClassSampleList.Count; // 各类训练样本数
+                    int n_SampleNum = sample.ClassSampleList.Count; // 各类样本数
                     S_W += sample.ConMatrix.Multiply(n_SampleNum);    //类内散布矩阵 = 类协方差矩阵 * 类样本数;  
                     M_V += sample.MeanVector.Multiply(n_SampleNum);   //类向量和 = 类均值向量 * 类样本数
                     num += n_SampleNum;
@@ -80,18 +85,6 @@ namespace HandSignRecognition.Core
 
                 #endregion
 
-
-
-
-
-
-
-
-
-
-
-                //PCA方法降维
-
                 #region 对特征值排序
 
                 ArrayList feaValueList = new ArrayList();
@@ -122,10 +115,10 @@ namespace HandSignRecognition.Core
                 #endregion
 
             }
-            return matrix;//降维后的矩阵：由20*48降维成20*5
+            return matrix;
         }
 
-        // 获取原始每个Feature降维后的特征
+        // 将原始样本降维
         public static Features MDSample(Features sourceSample)
         {
             Features feature = new Features();
@@ -137,7 +130,7 @@ namespace HandSignRecognition.Core
             return feature;
         }
 
-        // 获取所有训练Feature降维后的列表
+        // 获取降维后新样本
         public static ArrayList GetMDSampleList()
         {
             int sourceFeatureDimension = Constant.dimension; //获取原始特征向量的维数

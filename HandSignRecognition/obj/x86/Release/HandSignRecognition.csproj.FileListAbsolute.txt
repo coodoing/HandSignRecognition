@@ -23,53 +23,57 @@ E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\obj\x86\Rel
 E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.NearestTestForm.resources
 E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.UnknownTestForm.resources
 E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.KFunctionForm.resources
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.exe
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.pdb
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\HandSignRecognition.exe
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\HandSignRecognition.pdb
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\DiffieHellman.dll
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Core.dll
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Docking.dll
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Plugins.dll
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Ssh.dll
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.SyntaxDocument.dll
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Win32.dll
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\Org.Mentalis.Security.dll
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\ResolveAssemblyReference.cache
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.BayesTestForm.resources
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.KFunctionForm.resources
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.KNTestForm.resources
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.MeanCalculateForm.resources
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.NearestTestForm.resources
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.OutlineFeatureForm.resources
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.SampleForm.resources
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.UnknownTestForm.resources
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.MainForm.resources
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Properties.Resources.resources
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\GenerateResource.read.1.tlog
-D:\Data Reading\@研究生\2-Courseware\Pattern Recognition\@程序\Handsign代码\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\GenerateResource.write.1.tlog
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.exe
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.pdb
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\HandSignRecognition.exe
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\HandSignRecognition.pdb
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\DiffieHellman.dll
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Core.dll
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Docking.dll
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Plugins.dll
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Ssh.dll
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.SyntaxDocument.dll
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Win32.dll
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\bin\Release\Org.Mentalis.Security.dll
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\ResolveAssemblyReference.cache
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.BayesTestForm.resources
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.KFunctionForm.resources
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.KNTestForm.resources
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.MeanCalculateForm.resources
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.NearestTestForm.resources
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.OutlineFeatureForm.resources
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.SampleForm.resources
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.UnknownTestForm.resources
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.MainForm.resources
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Properties.Resources.resources
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\GenerateResource.read.1.tlog
-D:\Programming\MS\HSR-Final\HandSignRecognition\HandSignRecognition\obj\x86\Release\GenerateResource.write.1.tlog
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.exe
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.pdb
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\HandSignRecognition.exe
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\HandSignRecognition.pdb
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\DiffieHellman.dll
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Core.dll
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Docking.dll
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Plugins.dll
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Ssh.dll
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.SyntaxDocument.dll
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Win32.dll
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\Org.Mentalis.Security.dll
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\ResolveAssemblyReference.cache
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.BayesTestForm.resources
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.KFunctionForm.resources
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.KNTestForm.resources
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.MeanCalculateForm.resources
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.NearestTestForm.resources
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.OutlineFeatureForm.resources
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.SampleForm.resources
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.UnknownTestForm.resources
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.MainForm.resources
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Properties.Resources.resources
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\GenerateResource.read.1.tlog
+E:\下载专区\老罗\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\GenerateResource.write.1.tlog
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.exe
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.pdb
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\HandSignRecognition.exe
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\HandSignRecognition.pdb
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\DiffieHellman.dll
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Core.dll
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Docking.dll
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Plugins.dll
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Ssh.dll
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.SyntaxDocument.dll
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\Fireball.Win32.dll
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\Org.Mentalis.Security.dll
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\ResolveAssemblyReference.cache
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.BayesTestForm.resources
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.KFunctionForm.resources
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.KNTestForm.resources
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.MeanCalculateForm.resources
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.NearestTestForm.resources
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.OutlineFeatureForm.resources
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.SampleForm.resources
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Feature.UnknownTestForm.resources
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.MainForm.resources
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.Properties.Resources.resources
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\GenerateResource.read.1.tlog
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\GenerateResource.write.1.tlog
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\HandSignRecognition.exe.manifest
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\bin\Release\HandSignRecognition.application
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.exe.manifest
+E:\PRO\VS 相关\NET\WinForm\向智20101402097模式识别作业\HandSignRecognition\HandSignRecognition\obj\x86\Release\HandSignRecognition.application

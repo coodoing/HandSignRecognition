@@ -8,9 +8,17 @@ using HandSignRecognition.Core;
 
 namespace HandSignRecognition.Classifier
 {
-    /**
-     * 最近邻法
-     * **/
+    /// <summary> 
+    /// Author:AirFly
+    /// Date:12/4/2010 10:38:00 PM 
+    /// Company:DCBI
+    /// Copyright:2010-2013 
+    /// CLR Version:4.0.30319.1 
+    /// Blog Address:http://www.cnblogs.com/ttltry-air/
+    /// Class1 Illustration: All rights reserved please do not encroach!   
+    /// GUID:963d892f-4cc4-4c96-93e1-ef1a1133160b 
+    /// Description: 最近邻法
+    /// </summary>
     public class Nearest
     {
         //结构体，记录一个测试样本和任意一个训练样本之间的欧式距离，同时记录训练样本的类别ID
@@ -25,27 +33,8 @@ namespace HandSignRecognition.Classifier
         {
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         //进行最近邻分量
-        //输入参数testsamples为要进行测试的样本集,trainingSamples为训练样本集【非降维处理过的】
+        //输入参数testsamples为要进行测试的样本集,trainingSamples为训练样本集
         //k_value是设置的K参数
         public int Do_Nearest(Features myTestSample, ArrayList trainingSamples)
         {
@@ -86,9 +75,7 @@ namespace HandSignRecognition.Classifier
             for (i = 0; i < trainingCount; i++)
             {
                 Sample sample = (Sample)trainlist[i];
-                int n_SampleNum = sample.ClassSampleList.Count; //训练样本：开测试为16，闭测试为20
-
-
+                int n_SampleNum = sample.ClassSampleList.Count;
                 // 这里myDistance的初始化应该与n_SampleNum具体值进行动态改变
                 sampleDistance[] myDistance = new sampleDistance[n_SampleNum];
                 for (int k = 0; k < n_SampleNum; k++)
@@ -105,7 +92,6 @@ namespace HandSignRecognition.Classifier
                 //index += n_SampleNum;
             }
 
-            // 上述过程完成后，获得
             #endregion
 
 
@@ -128,6 +114,17 @@ namespace HandSignRecognition.Classifier
 
         }
 
+        //特定的比较函数
+        private static int CompareByDistance(sampleDistance x, sampleDistance y)
+        {
+            if (x.distance < y.distance)
+                return -1;
+            else if (x.distance == y.distance)
+                return 0;
+            else
+                return 1;
+        }
+
         //求两个样本之间的欧式距离
         //输入参数：（2个长度为n的一维数组，分别为这两个样本的n个特征分量）
         private Double MeasureDistance(double[] X, double[] Y)
@@ -145,19 +142,6 @@ namespace HandSignRecognition.Classifier
             return Math.Sqrt(sum);
         }
 
-
-        //特定的比较函数
-        private static int CompareByDistance(sampleDistance x, sampleDistance y)
-        {
-            if (x.distance < y.distance)
-                return -1;
-            else if (x.distance == y.distance)
-                return 0;
-            else
-                return 1;
-        }
-
-       
         // 求两样本之间的马氏距离
         private Double MeasureMahalanobisDistance(double[] x, double[] y)
         {

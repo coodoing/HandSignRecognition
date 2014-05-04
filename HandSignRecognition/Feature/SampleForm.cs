@@ -56,7 +56,7 @@ namespace HandSignRecognition.Feature
             {
                 MessageBox.Show(this, "你没有选择训练样本，请先选择", "提示信息", MessageBoxButtons.OK);
             }
-            else //设置开测试中80%的训练样本和20%测试样本
+            else
             {
                 List<PCXImage> pcxList = new List<PCXImage>();
                 int count = selectedSampleListBox.Items.Count;
@@ -150,8 +150,8 @@ namespace HandSignRecognition.Feature
                 #region 循环里面最好不要进行数值的初始化
 
                 int p = count;
-                int k = 0; //start
-                int m = k + 20; //end
+                int k = 0;
+                int m = k + 20;
 
                 #endregion
 
@@ -185,10 +185,9 @@ namespace HandSignRecognition.Feature
 
                     // 20%做测试样本，80%做训练样本
                     if (selectedSampleListBox.Items.Count == p - 4) //说明移除四个
-                        // 另外处理方式 unSelSampleListBox.Items.Count%4==0
                     {
-                        p -= 4;// p变化
-                        k += 16; //20-4                        
+                        k += 16; //20-4
+                        p -= 4;
                         m = k + 20;
                     }
                     else

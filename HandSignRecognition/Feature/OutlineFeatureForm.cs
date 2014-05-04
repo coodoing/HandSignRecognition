@@ -80,7 +80,6 @@ namespace HandSignRecognition.Feature
 
         #region 事件方法
 
-        //在进行特征提取的过程中，又重新初始化了gridview
         private void featureExtractButton_Click(object sender, EventArgs e)
         {
             //FeatureHelper.FeatureExtract();
@@ -148,20 +147,7 @@ namespace HandSignRecognition.Feature
 
         #endregion
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        #region None：公共方法
+        #region  公共方法
         #endregion
 
     }

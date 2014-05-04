@@ -12,21 +12,27 @@ using System.Collections;
 
 namespace HandSignRecognition.Core
 {
-    /// <summary>
-    ///  特征操作类：该文件中，不把类的属性和操作方法分离
-    ///  
-    /// 主要是将PCXImage列表转换成相应的Feature列表
+    /// <summary> 
+    /// Author:AirFly
+    /// Date:12/6/2010 10:38:00 PM 
+    /// Company:DCBI
+    /// Copyright:2010-2013 
+    /// CLR Version:4.0.30319.1 
+    /// Blog Address:http://www.cnblogs.com/ttltry-air/
+    /// Class1 Illustration: All rights reserved please do not encroach!   
+    /// GUID:963d892f-4cc4-4c96-93e1-ef1a1133160b 
+    /// Description: 特征操作类：该文件中，不把类的属性和操作方法分离
     /// </summary>
     public class FeatureHelper
     {
         #region 属性值
 
         private static Features feature;
-        //pcxlist不能在这里进行初始化,即不能设为null,只能new一个实例
-        private static List<PCXImage> pcxlist;//训练样本的pcx图片列表
-        private static ArrayList sampleArray; //存放训练样本特征
-        private static List<PCXImage> testpcxlist; //测试样本的pcx图片列表
-        private static ArrayList testSampleArray;//存放测试样本特征
+        //pcxlist不能再这里进行初始化,即不能设为null,只能new一个实例
+        private static List<PCXImage> pcxlist;
+        private static ArrayList sampleArray;
+        private static List<PCXImage> testpcxlist;
+        private static ArrayList testSampleArray;
         
 
         public static DataSet ds = new DataSet();
@@ -64,9 +70,7 @@ namespace HandSignRecognition.Core
             {
                 filepath = pcx.OldFilename;
                 classID = Convert.ToInt32(GetUpperFoldername(filepath));
-
-                // 这里同样可以采用其他形式的构造函数
-                feature = new Features(filepath, classID);//构造函数-1  
+                feature = new Features(filepath, classID);//构造函数-1
                 sampleArray.Add(feature);//这里用ArrayList代替List实现
             }
         }
@@ -96,7 +100,6 @@ namespace HandSignRecognition.Core
             }
         }
 
-        // 没有用到
         public static Features GetFeature()
         {
             return feature;
@@ -112,14 +115,6 @@ namespace HandSignRecognition.Core
         public static ArrayList GetTestFeaturesList()
         {
             return testSampleArray;
-        }
-
-        // 设置训练样本和测试样本的值
-        public static void GetSamplesFeatures()
-        {
-            //因为在此之前，已经通过InitDataSet方法得到训练样本和测试样本的数据
-            SetFeatures();
-            SetTestFeatures();
         }
 
         #endregion
@@ -145,7 +140,7 @@ namespace HandSignRecognition.Core
                 dt.Columns.Add(colname, typeof(string));
             }
 
-            #region DataGridView初始化：傻瓜式方法
+            #region DataGridView初始化
             //DataGridViewTextBoxColumn column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             //DataGridViewTextBoxColumn column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             //this.SuspendLayout();
@@ -215,8 +210,15 @@ namespace HandSignRecognition.Core
 
         #endregion
 
-        #region string字符串一些操作
-        /*out与ref关键字*/        
+        #region 其他一些操作
+        /*out与ref关键字*/
+
+        // 设置训练样本和测试样本的值
+        public static void GetSamplesFeatures()
+        {
+            SetFeatures();
+            SetTestFeatures();
+        }
 
         // 获取文件名006-006
         public static string GetUpperFoldername(string filepath)
@@ -237,19 +239,7 @@ namespace HandSignRecognition.Core
 
         #endregion
 
-
-
-
-
-
-
-
-
-
-
-
-
-        #region none：特征提取
+        #region 特征提取
 
         //public static void FeatureExtract()
         //{

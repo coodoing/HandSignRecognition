@@ -11,6 +11,17 @@ using System.IO;
 
 namespace HandSignRecognition.Core
 {
+    /// <summary> 
+    /// Author:AirFly
+    /// Date:12/5/2010 10:38:00 PM 
+    /// Company:DCBI
+    /// Copyright:2010-2013 
+    /// CLR Version:4.0.30319.1 
+    /// Blog Address:http://www.cnblogs.com/ttltry-air/
+    /// Class1 Illustration: All rights reserved please do not encroach!   
+    /// GUID:963d892f-4cc4-4c96-93e1-ef1a1133160b 
+    /// Description：处理PCX图片类
+    /// </summary>
     public class PCXHelper
     {
         #region 属性
@@ -27,7 +38,20 @@ namespace HandSignRecognition.Core
         #endregion
 
         #region 静态方法
-                
+
+        // 加载路径下的PCX图片
+        public static void Load(string filename)
+        {
+            Image image = LoadPCX(filename);
+            byte[] bmpdata = ImageToByteArray(image);
+            if (!bmpdata.Equals(null))
+            {
+                FileStream testfile = new FileStream("temp-file.bin", FileMode.Create, FileAccess.Write);
+                testfile.Write(bmpdata, 0, bmpdata.Length);
+                testfile.Close();
+            }
+        }
+
         // 加载和查看PCX图片
         public static Image LoadPCX(string filename)
         {
@@ -95,9 +119,6 @@ namespace HandSignRecognition.Core
             pImage.PcxSize = pcximage.PcxSize;
             return pImage;
         }
-        
-       
-        #region  图片放大和二值化
 
         // 查看签名
         public static Image ReviewPCX(string filename)
@@ -207,27 +228,10 @@ namespace HandSignRecognition.Core
             return imageToSet;
         }
 
-        #endregion
-
         #region Image与byte[]转换
         /*
          Info:http://www.cnblogs.com/billow/archive/2006/12/09/587446.html
          */
-
-
-        // 加载路径下的PCX图片
-        //public static void Load(string filename)
-        //{
-        //    Image image = LoadPCX(filename);
-        //    //byte[] bmpdata = ImageToByteArray(image);
-        //    //if (!bmpdata.Equals(null))
-        //    //{
-        //    //    FileStream testfile = new FileStream("temp-file.bin", FileMode.Create, FileAccess.Write);
-        //    //    testfile.Write(bmpdata, 0, bmpdata.Length);
-        //    //    testfile.Close();
-        //    //}
-        //}
-
 
         // 用System.Drawing.Image.Save方法把图片存为 memorystream.，然后内存流用MemryStrea类的ToArray()方法返回一个byte 数组
         public static byte[] ImageToByteArray(Image imageIn)

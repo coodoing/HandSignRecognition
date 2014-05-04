@@ -40,6 +40,7 @@ namespace HandSignRecognition
         {
             this.viewToolStripMenuItem.Visible = false;
             this.editToolStripMenuItem.Visible = false;
+            this.helpToolStripMenuItem.Visible = false;
             this.toolStripStatusLabel3.Text = "系统当前时间：" + DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
             this.timerStrip.Interval = 1000;
             this.timerStrip.Start();
@@ -186,7 +187,7 @@ namespace HandSignRecognition
                 mcform.ShowDialog();
             }
 
-            #region none：测试
+            #region 测试
 
             //MeanCalculateForm mcform = new MeanCalculateForm();
             //mcform.ShowDialog();

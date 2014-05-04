@@ -105,7 +105,7 @@
             // 
             // btn_nearestclassify
             // 
-            this.btn_nearestclassify.Location = new System.Drawing.Point(416, 20);
+            this.btn_nearestclassify.Location = new System.Drawing.Point(402, 20);
             this.btn_nearestclassify.Name = "btn_nearestclassify";
             this.btn_nearestclassify.Size = new System.Drawing.Size(75, 23);
             this.btn_nearestclassify.TabIndex = 0;

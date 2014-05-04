@@ -9,11 +9,16 @@ using System.Drawing.Imaging;
 
 namespace HandSignRecognition.Core.Base
 {
-    /**
-     * 
-     * Feature为一个完整的特征类
-     * 
-     * **/
+    /// <summary> 
+    /// Author:AirFly
+    /// Date:12/3/2010 10:38:00 PM 
+    /// Company:DCBI
+    /// Copyright:2010-2013 
+    /// CLR Version:4.0.30319.1 
+    /// Blog Address:http://www.cnblogs.com/ttltry-air/
+    /// Class1 Illustration: All rights reserved please do not encroach!   
+    /// GUID:963d892f-4cc4-4c96-93e1-ef1a1133160b 
+    /// Description: Feature为一个完整的特征类
     public class Features
     {
         #region 属性值
@@ -190,15 +195,6 @@ namespace HandSignRecognition.Core.Base
 
         }
 
-        /*
-         
-         ET1:从边缘开始知道遇到第一个黑色像素的白色像素个数
-         DT12:从边缘开始经过一次跳变（从白色像素第一次遇到黑色像素）到第二次跳变见白色像素的数目
-         */
-
-
-
-
         // 轮廓特征提取中的ET1
         public void ET1()
         {
@@ -207,18 +203,7 @@ namespace HandSignRecognition.Core.Base
 
             /**
              * 每个点从4个角度（上、下、左、右）进行提取
-             * 特征提取的时候，从每个边缘提取6 个ET1和6 个DT12轮廓特征。
-             * 
-             * imageMatrix矩阵为[94,129]：所以
-             * 上下边缘提取的时候：step初值为20，然后循环5次，每次step增值为21，第六次令做处理
-             * k值为24个特征值
-             * 
-             * 
-             * 上下，左右边缘提取注意点：
-             * 上下边缘：满足从右到左及从左至右选取6个特征值
-             * 左右边缘：满足从上到下和从下到上选取6个特征值
-             * 
-             * 
+             * 特征提取的时候，提取6 个ET1和6 个DT12轮廓特征。
              * 
              * **/
 
@@ -227,14 +212,10 @@ namespace HandSignRecognition.Core.Base
             i = 0; step = 20;//第1至第5个
             for (k = 0; k < 5; k++)
             {
-                for (num = 0; i <= step; i++) //保证每次循环前num=0，i值不做处理
-                    //另一种表述方式 
-                    /*num = 0 
-                     * for (; i <= step; i++)
-                    */
+                for (num = 0; i <= step; i++)
                     for (j = 0; j < 94; j++)
                     {
-                        if (imageMartix[j, i] == 255) //白色
+                        if (imageMartix[j, i] == 255)
                             num++;
                         else
                             break;
@@ -480,18 +461,7 @@ namespace HandSignRecognition.Core.Base
 
         #endregion
 
-
-
-
-
-
-
-
-
-
-
-
-        #region None:初始Feature文件
+        #region 初始Feature文件
 
         //private int[,] featureData;
         //private int[,] testData; //[48,48]

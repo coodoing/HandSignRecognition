@@ -19,10 +19,9 @@ namespace HandSignRecognition.Feature
         #region 窗体初始化
 
         public KNTestForm()
-        {
-            //下面两行代码加载顺序不能反
+        {            
             InitializeComponent();
-            this.clearButton.Visible = false;
+            this.clearButton.Visible = false;//加载顺序不能反
         }
 
         #endregion

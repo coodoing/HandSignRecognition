@@ -10,15 +10,23 @@ using System.Collections.Generic;
 
 namespace HandSignRecognition.Core
 {
-    /// <summary>
-    /// 
+    /// <summary> 
+    /// Author:AirFly
+    /// Date:12/5/2010 10:38:00 PM 
+    /// Company:DCBI
+    /// Copyright:2010-2013 
+    /// CLR Version:4.0.30319.1 
+    /// Blog Address:http://www.cnblogs.com/ttltry-air/
+    /// Class1 Illustration: All rights reserved please do not encroach!   
+    /// GUID:963d892f-4cc4-4c96-93e1-ef1a1133160b 
+    /// Description：选择PCX样本的类
     /// </summary>
     public class SelectedPCXHelper
     {
 
         #region 属性
 
-        //不能在这里进行调用赋值，只能初始化
+        //不能再这里进行调用赋值，只能初始化
         private static SelectedPCXImage selPcxImage = new SelectedPCXImage();
         public static List<PCXImage> pcxlist = new List<PCXImage>();
         private static List<PCXImage> unsellist = new List<PCXImage>();
@@ -45,7 +53,7 @@ namespace HandSignRecognition.Core
                 if (file.Extension.ToLower().Equals(".pcx"))
                 {
                     number += 1;
-                    Image image = PCXHelper.LoadPCX(file.FullName); //相当于为pcximage赋值
+                    Image image = PCXHelper.LoadPCX(file.FullName);
                     PCXImage pcximage = PCXHelper.GetPCXImage(file.FullName);
                     PCXImage pImage = PCXHelper.GetPCXImage(pcximage);
                     pcxlist.Add(pImage); // 这里的一个错误就是就是直接添加pcxlist.Add(pcximage)
@@ -91,13 +99,6 @@ namespace HandSignRecognition.Core
             return pcxList;
         }
 
-
-
-
-
-
-
-
         // 根据ListBox中最后的list列表，选择80%个训练样本        
         public static void SetSelPCXFromLB(List<PCXImage> pcxList, string dirPath)
         {
@@ -118,9 +119,6 @@ namespace HandSignRecognition.Core
         {
             return pcxlist;
         }
-
-
-
 
 
         public static void SetUnselPCXList(List<PCXImage> pcxList, string dirPath)

@@ -1,0 +1,17 @@
+E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\bin\Debug\HandSignRecognition.exe
+E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\bin\Debug\HandSignRecognition.pdb
+E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\obj\x86\Debug\HandSignRecognition.MainForm.resources
+E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\obj\x86\Debug\HandSignRecognition.Properties.Resources.resources
+E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\obj\x86\Debug\HandSignRecognition.exe
+E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\obj\x86\Debug\HandSignRecognition.pdb
+E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\bin\Debug\DiffieHellman.dll
+E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\bin\Debug\Fireball.Core.dll
+E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\bin\Debug\Fireball.Docking.dll
+E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\bin\Debug\Fireball.Plugins.dll
+E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\bin\Debug\Fireball.Ssh.dll
+E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\bin\Debug\Fireball.SyntaxDocument.dll
+E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\bin\Debug\Fireball.Win32.dll
+E:\PRO\VS 相关\NET\WinForm\HandSignRecognition\HandSignRecognition\bin\Debug\Org.Mentalis.Security.dll

@@ -294,7 +294,7 @@ namespace HandSignRecognition
         // 关于"关于"菜单的单击事件        
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(this, "Copyright(C) by @AirFly \n     20101402097 向智", "关于‘脱机手写签名识别’", MessageBoxButtons.OK);
+            MessageBox.Show(this, "Copyright(C) by @AirFly \n , "关于‘脱机手写签名识别’", MessageBoxButtons.OK);
         }
 
         // 使用说明菜单
